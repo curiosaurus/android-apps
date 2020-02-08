@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp">
+        <EditText
+            android:id="@+id/Player1name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="30sp"
+            android:inputType="textPersonName"
+            android:text="Player 1 Name" />
+
+        <EditText
+            android:id="@+id/Player2name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_below="@+id/Player1name"
+            android:inputType="textPersonName"
+            android:text="Player 2 Name"
+            android:textSize="30sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="0dp"
+            android:layout_height="310dp"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/start"
+            android:textSize="40sp" />
+    </LinearLayout>
+</LinearLayout>
